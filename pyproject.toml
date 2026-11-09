@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "k8s-cost-peek"
+version = "0.1.0"
+description = "Price Kubernetes CPU and memory requests per namespace or team, straight from kubectl output"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "Harjeet J L" }]
+keywords = ["kubernetes", "finops", "cost", "kubectl", "devops", "eks"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: System :: Systems Administration",
+  "Environment :: Console",
+]
+
+[project.scripts]
+k8s-cost-peek = "k8s_cost_peek.cli:main"
+
+[tool.setuptools]
+packages = ["k8s_cost_peek"]

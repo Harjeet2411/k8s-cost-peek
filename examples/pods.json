@@ -1,0 +1,568 @@
+{
+  "apiVersion": "v1",
+  "kind": "List",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "payments-api-7c9d-0",
+        "namespace": "payments",
+        "labels": {
+          "team": "payments"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "500m",
+                "memory": "1Gi"
+              }
+            }
+          },
+          {
+            "name": "c1",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "100m",
+                "memory": "128Mi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "payments-api-7c9d-1",
+        "namespace": "payments",
+        "labels": {
+          "team": "payments"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "500m",
+                "memory": "1Gi"
+              }
+            }
+          },
+          {
+            "name": "c1",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "100m",
+                "memory": "128Mi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "payments-api-7c9d-2",
+        "namespace": "payments",
+        "labels": {
+          "team": "payments"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "500m",
+                "memory": "1Gi"
+              }
+            }
+          },
+          {
+            "name": "c1",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "100m",
+                "memory": "128Mi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "payments-db-0",
+        "namespace": "payments",
+        "labels": {
+          "team": "payments"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "2",
+                "memory": "8Gi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "checkout-web-5f6b-0",
+        "namespace": "checkout",
+        "labels": {
+          "team": "checkout"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "250m",
+                "memory": "512Mi"
+              }
+            }
+          }
+        ],
+        "initContainers": [
+          {
+            "name": "migrate",
+            "image": "example/migrate:1",
+            "resources": {
+              "requests": {
+                "cpu": "1",
+                "memory": "256Mi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "checkout-web-5f6b-1",
+        "namespace": "checkout",
+        "labels": {
+          "team": "checkout"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "250m",
+                "memory": "512Mi"
+              }
+            }
+          }
+        ],
+        "initContainers": [
+          {
+            "name": "migrate",
+            "image": "example/migrate:1",
+            "resources": {
+              "requests": {
+                "cpu": "1",
+                "memory": "256Mi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "checkout-web-5f6b-2",
+        "namespace": "checkout",
+        "labels": {
+          "team": "checkout"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "250m",
+                "memory": "512Mi"
+              }
+            }
+          }
+        ],
+        "initContainers": [
+          {
+            "name": "migrate",
+            "image": "example/migrate:1",
+            "resources": {
+              "requests": {
+                "cpu": "1",
+                "memory": "256Mi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "checkout-web-5f6b-3",
+        "namespace": "checkout",
+        "labels": {
+          "team": "checkout"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "250m",
+                "memory": "512Mi"
+              }
+            }
+          }
+        ],
+        "initContainers": [
+          {
+            "name": "migrate",
+            "image": "example/migrate:1",
+            "resources": {
+              "requests": {
+                "cpu": "1",
+                "memory": "256Mi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "search-indexer-0",
+        "namespace": "search",
+        "labels": {
+          "team": "search"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "1500m",
+                "memory": "6Gi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "search-indexer-1",
+        "namespace": "search",
+        "labels": {
+          "team": "search"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "1500m",
+                "memory": "6Gi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "search-scratch",
+        "namespace": "search",
+        "labels": {
+          "team": "search"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {}
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "prometheus-0",
+        "namespace": "monitoring",
+        "labels": {
+          "team": "platform"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "1",
+                "memory": "4Gi"
+              }
+            }
+          }
+        ],
+        "initContainers": [
+          {
+            "name": "config-reloader",
+            "image": "example/reloader:1",
+            "restartPolicy": "Always",
+            "resources": {
+              "requests": {
+                "cpu": "50m",
+                "memory": "64Mi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "grafana-6d4c",
+        "namespace": "monitoring",
+        "labels": {
+          "team": "platform"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "200m",
+                "memory": "512M"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "coredns-a",
+        "namespace": "kube-system",
+        "labels": {}
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "100m",
+                "memory": "70Mi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "coredns-b",
+        "namespace": "kube-system",
+        "labels": {}
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "100m",
+                "memory": "70Mi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "nightly-report-28831",
+        "namespace": "batch",
+        "labels": {
+          "team": "data"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "4",
+                "memory": "16Gi"
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "phase": "Succeeded"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "sandboxed-etl-1",
+        "namespace": "batch",
+        "labels": {
+          "team": "data"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "c0",
+            "image": "example/app:1.0",
+            "resources": {
+              "requests": {
+                "cpu": "1",
+                "memory": "2Gi"
+              }
+            }
+          }
+        ],
+        "overhead": {
+          "cpu": "250m",
+          "memory": "120Mi"
+        }
+      },
+      "status": {
+        "phase": "Running"
+      }
+    }
+  ]
+}
